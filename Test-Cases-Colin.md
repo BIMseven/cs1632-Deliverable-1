@@ -43,7 +43,7 @@
 **POSTCONDITIONS:** Checkable items Time Program and Check for End Opcode are listed under Options. 
 
 ---
-**IDENTIFIER:** 
+**IDENTIFIER:** FUN-RUN-SPEED
 
 **DESCRIPTION:** 
 
@@ -56,3 +56,88 @@
 
 ---
   
+**IDENTIFIER:** FUN-WALK-SPEED
+
+**DESCRIPTION:** 
+
+**PRECONDITIONS:** 
+
+**EXECUTION STEPS:**
+    1.
+
+**POSTCONDITIONS:** 
+
+---
+ 
+ **IDENTIFIER:** FUN-MOSEY-SPEED
+
+**DESCRIPTION:** 
+
+**PRECONDITIONS:** 
+
+**EXECUTION STEPS:**
+    1.
+
+**POSTCONDITIONS:** 
+
+---
+ 
+**IDENTIFIER:** FUN-TIME-ON
+
+**DESCRIPTION:** This test determines if, when Time program is checked, the total time to execute is 
+displayed after running a program.
+
+**PRECONDITIONS:** JBefunge is running.
+
+**EXECUTION STEPS:**
+    1. Open the Options menu, check the "Time program" checkbox.
+    2. Run the included FizzBuzz program.
+    3. Ensure the time to execute in microseconds is displayed.
+
+**POSTCONDITIONS:** The correct time to execute is displayed after running FizzBuzz.
+
+---
+ 
+ **IDENTIFIER:** FUN-TIME-OFF
+
+**DESCRIPTION:** This test determines if, when Time program is not checked, the total time to execute is not
+displayed after running a program.
+
+**PRECONDITIONS:** JBefunge is running.
+
+**EXECUTION STEPS:**
+    1. Open the Options menu, ensure the "Time program" checkbox is empty.
+    2. Run the included FizzBuzz program.
+    3. Ensure the time to execute in microseconds is not displayed.
+
+**POSTCONDITIONS:** No time to execute in microseconds is displayed.
+
+---
+
+**IDENTIFIER:** FUN-BEFUNGE
+
+**DESCRIPTION:** 
+
+**PRECONDITIONS:** 
+
+**EXECUTION STEPS:**
+    1.
+
+**POSTCONDITIONS:** 
+
+---
+ 
+ **IDENTIFIER:** PERF-EXECUTION-TIME
+
+**DESCRIPTION:** 
+
+**PRECONDITIONS:** 
+
+**EXECUTION STEPS:**
+    1.
+
+**POSTCONDITIONS:** 
+
+---
+ 
+ 
