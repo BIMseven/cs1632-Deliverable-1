@@ -22,6 +22,7 @@
 **PRECONDITIONS:** JBefunge is running.
 
 **EXECUTION STEPS:**
+
     1. Select the Color menu item.
     2. Observe Red, Yellow, Blue, Pink, Green, and Orange listed underneath.
 
@@ -35,6 +36,7 @@
 **PRECONDITIONS:** JBefunge is running.
 
 **EXECUTION STEPS:**
+
     1. Select the Option menu item.
     2. Observe checkable items Time Program and Check for End Opcode.
 
