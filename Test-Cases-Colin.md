@@ -90,6 +90,7 @@ displayed after running a program.
 **PRECONDITIONS:** JBefunge is running.
 
 **EXECUTION STEPS:**
+
     1. Open the Options menu, check the "Time program" checkbox.
     2. Run the included FizzBuzz program.
     3. Ensure the time to execute in microseconds is displayed.
@@ -106,6 +107,7 @@ displayed after running a program.
 **PRECONDITIONS:** JBefunge is running.
 
 **EXECUTION STEPS:**
+
     1. Open the Options menu, ensure the "Time program" checkbox is empty.
     2. Run the included FizzBuzz program.
     3. Ensure the time to execute in microseconds is not displayed.
