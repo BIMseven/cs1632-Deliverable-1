@@ -6,8 +6,7 @@
 
 **PRECONDITIONS:** JBefunge is compiled as specified by its readme.
 
-**EXECUTION STEPS:**
-
+**EXECUTION STEPS:** y
     1.The user runs JBefunge
 
 **POSTCONDITIONS:** The JBefunge GUI displayed, showing  three text boxes labeled
@@ -44,7 +43,7 @@ be edited by the user.
 'Stack' nor the 'Output' text boxes. 
 
 ---
-**IDENTIFIER:** 
+**IDENTIFIER:** FUN-SAVE-FILE-CREATION
 
 **DESCRIPTION:** 
 
@@ -56,5 +55,93 @@ be edited by the user.
 **POSTCONDITIONS:** 
 
 ---
-  
+**IDENTIFIER:** FUN-SAVE-FILE-UPDATE
 
+**DESCRIPTION:** 
+
+**PRECONDITIONS:** 
+
+**EXECUTION STEPS:**
+    1.
+
+**POSTCONDITIONS:** 
+
+---
+
+**IDENTIFIER:** FUN-SAVE-AS-FILE-CREATION
+
+**DESCRIPTION:** 
+
+**PRECONDITIONS:** 
+
+**EXECUTION STEPS:**
+    1.
+
+**POSTCONDITIONS:** 
+
+---
+**IDENTIFIER:** FUN-OPEN-FILE
+
+**DESCRIPTION:** 
+
+**PRECONDITIONS:** 
+
+**EXECUTION STEPS:**
+    1.
+
+**POSTCONDITIONS:** 
+
+---
+**IDENTIFIER:** FUN-OPEN-FILE-CHANGES-GUI-TITLE
+
+**DESCRIPTION:** 
+
+**PRECONDITIONS:** 
+
+**EXECUTION STEPS:**
+    1.
+
+**POSTCONDITIONS:** 
+
+---
+**IDENTIFIER:** FUN-OPEN-FILE-LOADS-INTO-PROGRAM-AREAD
+
+**DESCRIPTION:** 
+
+**PRECONDITIONS:** 
+
+**EXECUTION STEPS:**
+    1.
+
+**POSTCONDITIONS:** 
+
+---
+**IDENTIFIER:** FUN-SAVE-FILE 
+
+**DESCRIPTION:** 
+
+**PRECONDITIONS:** 
+
+**EXECUTION STEPS:**
+    1.
+
+**POSTCONDITIONS:** 
+
+---
+[PAGEBREAK]
+
+    SUMMARY: FUN-OPEN-FILE-DOES-NOT-UPDATE-PROGRAM-AREA
+    DESCRIPTION: 
+        Running command 'Open File' does not update the text inside of the program-area text box.
+    REPRODUCTION STEPS:
+        1. Run JBefunge.
+        2. Type text 'hello world' into the program area.
+        3. Save the file as 'test-1'.
+        4. Clear the program area and use save as 'test-2-no-text'.
+        5. Close and re-launch JBefunge.
+        6. Open 'test-1', which should display 'hello world' in the program area.
+        7. Open 'test-2-no-text'.
+    EXPECTED BEHAVIOR: Program area should be empty.
+    OBSERVED BEHAVIOR: Program still displays 'hello world'.
+    SEVERITY: Critical
+    IMPACT:Blocking
