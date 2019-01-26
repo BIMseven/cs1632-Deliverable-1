@@ -116,16 +116,34 @@ displayed after running a program.
 
 ---
 
-**IDENTIFIER:** FUN-BEFUNGE
+**IDENTIFIER:** FUN-BEFUNGE-VALID
 
-**DESCRIPTION:** 
+**DESCRIPTION:** This test determines if JBefunge can successfully execute a JBefunge-93 program.
 
-**PRECONDITIONS:** 
+**PRECONDITIONS:** JBefunge is running and "HelloWorld.bf" has been opened in the IDE.
 
 **EXECUTION STEPS:**
-    1.
 
-**POSTCONDITIONS:** 
+    1. Press the "Run" button.
+    2. Wait for execution to finish.
+
+**POSTCONDITIONS:** The stack is empty and "Hello, World!" is printed in the Output field.
+
+---
+ 
+ **IDENTIFIER:** FUN-BEFUNGE-INVALID
+
+**DESCRIPTION:** This test is an Edge Case to determine if JBefunge will run an invalid Java program.
+
+**PRECONDITIONS:** JBefunge is running and a basic Java "Hello, World!" program is entered in the Program Area.
+(WARNING: Test will continue to execute indefinitely, will need to be interrupted.)
+
+**EXECUTION STEPS:**
+
+    1. Press the "Run" button.
+    2. Observe the Stack and Output textboxes.
+
+**POSTCONDITIONS:** Program continues to execute indefinitely, with nothing displayed in the Stack or Output textboxes.
 
 ---
  
