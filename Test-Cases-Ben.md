@@ -1,51 +1,38 @@
 # Test Cases -Ben
-  
-    IDENTIFIER: FUN-TEXT-DISPLAY
-
+    IDENTIFIER: TEST-TEXT-DISPLAY
     DESCRIPTION:
-        This test verifies that the GUI displays three text boxes labeled 'Program     Area', 'Stack', and 'Output'.
-
+        This test verifies that the GUI displays three text boxes labeled 'Program Area', 'Stack', and 'Output'.
     PRECONDITIONS:
         JBefunge is compiled as specified by its readme.
-
     EXECUTION STEPS:  
         1.The user runs JBefunge
-
     POSTCONDITIONS: 
         The JBefunge GUI displayed, showing  three text boxes labeled 'Program Area', 'Stack', and 'Output'respectively. 
 
 ---
-    IDENTIFIER:  FUN-EDITABLE-PROGRAM-AREA-TEXT-DISPLAY
-
-    DESCRIPTION:  This test verifies that the 'Program Area' text box may be edited by the   user. 
-
-    PRECONDITIONS:  JBefunge is running.
-
+    IDENTIFIER:  TEST-EDITABLE-PROGRAM-AREA-TEXT-DISPLAY
+    DESCRIPTION:
+        This test verifies that the 'Program Area' text box may be edited by the user. 
+    PRECONDITIONS: JBefunge is running.
     EXECUTION STEPS: 
         1. Click on the upper-most text box labeled 'Program Area'.
         2. Type the word 'test'.
-
-    POSTCONDITIONS:  Verify that the word 'test' has appeared in the selected
-    text-box. 
-
+    POSTCONDITIONS:
+        Verify that the word 'test' has appeared in the selected text-box. 
 ---
-    IDENTIFIER:  FUN-UNEDITABLE-PROGRAM-AREA-TEXT-DISPLAY
-
-    DESCRIPTION:  This test verifies that the 'Stack' and 'Output' text boxes cannot
-    be edited by the user. 
-
-    PRECONDITIONS:  JBefunge is running.
-
+    IDENTIFIER:  TEST-UNEDITABLE-PROGRAM-AREA-TEXT-DISPLAY
+    DESCRIPTION:  
+        This test verifies that the 'Stack' and 'Output' text cannot be edited by the user. 
+    PRECONDITIONS: 
+        JBefunge is running.
     EXECUTION STEPS: 
         1. Click on the middle text box labeled 'Stack'.
         2. Type the word 'test'.
         3. Repeat steps 1 and 2 for the lower-most text box labeled 'Output'.
-
-    POSTCONDITIONS:  Verify that the word 'test' has not appeared in neither the
-    'Stack' nor the 'Output' text boxes. 
-
+    POSTCONDITIONS:
+        Verify that the word 'test' has not appeared in neither the 'Stack' nor the 'Output' text boxes. 
 ---
-    IDENTIFIER:  FUN-SAVE-FILE-CREATION
+    IDENTIFIER:  TEST-SAVE-FILE-CREATION
 
     DESCRIPTION:  This test verifies that using the 'save file' command under the file
     menu on a new, untitled program will create a file of the specified name in the
@@ -69,7 +56,7 @@
         Opening this file displays "test-text" in the program area. 
 
 ---
-    IDENTIFIER:  FUN-SAVE-FILE-UPDATE
+    IDENTIFIER:  TEST-SAVE-FILE-UPDATE
 
     DESCRIPTION:  This test verifies that saving an updated file applies any changes to an
     existing file.
@@ -95,7 +82,7 @@
 
 ---
 
-    IDENTIFIER:  FUN-SAVE-AS-FILE-CREATION
+    IDENTIFIER:  TEST-SAVE-AS-FILE-CREATION
 
     DESCRIPTION:  This test case verifies that the save as function creates a new file
     when given a unique name.
@@ -122,7 +109,7 @@
         name in the title of the window.
 
 ---
-    IDENTIFIER:  FUN-SAVE-AS-FILE-UPDATE
+    IDENTIFIER:  TEST-SAVE-AS-FILE-UPDATE
 
     DESCRIPTION:  This test case verifies that the save as function updates or
     overwrites a specified.  
@@ -148,7 +135,7 @@
         name in the title of the window.
 
 ---
-    IDENTIFIER:  FUN-OPEN-FILE-TEXT-LOADS-INTO-PROGRAM-AREA
+    IDENTIFIER:  TEST-OPEN-FILE-TEXT-LOADS-INTO-PROGRAM-AREA
 
     DESCRIPTION:  This test verifies that the open file function properly displays the
     text 
@@ -167,7 +154,7 @@
         "removed-text" is replaced in the program area
 
 ---
-    IDENTIFIER:  FUN-OPEN-FILE-CHANGES-GUI-TITLE
+    IDENTIFIER:  TEST-OPEN-FILE-CHANGES-GUI-TITLE
 
     DESCRIPTION:  JBefunge is running with no program selected, the title reads
     "UNTITLED", and a JBEFUNGE file named "open-test" with a
@@ -187,7 +174,7 @@
 
 ---
 
-    IDENTIFIER:  FUN-OPEN-FILE-LOADS-INTO-PROGRAM-AREA-FROM-OPENED-FILE
+    IDENTIFIER:  TEST-OPEN-FILE-LOADS-INTO-PROGRAM-AREA-FROM-OPENED-FILE
 
     DESCRIPTION:  This test verifies that opening a file while a file already is
     opened updates the program area properly.
@@ -204,20 +191,16 @@
        The program area reads "success".
 
 ---
-    IDENTIFIER:  FUN-OPEN-FILE-UPDATES-WINDOW-TITLE-FROM-OPENED-FILE
-
-    DESCRIPTION:  This test verifies that opening a file while a file already is
-    opened updates the JBefunge window properly.
-
-    PRECONDITIONS:  JBefunge is running with some file "open-test-fail" opened. The title    reads
-    "open-test-fail", and a JBefunge file named "open-test-success" already exists.
-
+    IDENTIFIER: TEST-OPEN-FILE-UPDATES-WINDOW-TITLE-FROM-OPENED-FILE
+    DESCRIPTION:
+        This test verifies that opening a file while a file already is opened updates the JBefunge window properly.
+    PRECONDITIONS:
+        JBefunge is running with some file "open-test-fail" opened. The title reads "open-test-fail", and a JBefunge file named "open-test-success" already exists.
     EXECUTION STEPS: 
         1. Click on "open file" under the file menu.
         2. Navigate to directory where "open-test-success" exists, and open "open-test-success".
-
-    POSTCONDITIONS:  
-       The title of the JBefunge window reads "open-test-success".
+    POSTCONDITIONS:
+        The title of the JBefunge window reads "open-test-success".
 
 ---
     IDENTIFIER: TEST-STEP-OPERATION-MOVEMENT
@@ -253,78 +236,57 @@
     POSTCONDITIONS:  
         The Output area displays "1".
 ---
-
-    IDENTIFIER:  TEST-STEP-CURSOR-DISPLAY
-
+    IDENTIFIER:  TEST-STOP-DISABLES-STOP
     DESCRIPTION:  
-
+        Verifies that pressing Stop while executing a program disables the Stop button.
     PRECONDITIONS:  
-
+        JBefunge is running and the FizzBuzz.bf program exists in the JBefunge directory.
     EXECUTION STEPS: 
-        1.
-
+        1. Open "FizzBuzz.bf".
+        2. Press the Mosey button.
+        3. Press Stop.
     POSTCONDITIONS:  
-
+        The Stop button returns to its original disabled state, indicated by its grayed-out appearance.
 ---
-    IDENTIFIER:  FUN-STOP-DISABLES-STOP
-
+    IDENTIFIER:  TEST-STOP-STEP-ENABLED
     DESCRIPTION:  
-
     PRECONDITIONS:  
-
     EXECUTION STEPS: 
         1.
-
     POSTCONDITIONS:  
-
 ---
-    IDENTIFIER:  FUN-STEP-ENABLES-STOP-BUTTON
-
+    IDENTIFIER:  TEST-STOP-WALK-ENABLED
     DESCRIPTION:  
-
     PRECONDITIONS:  
-
     EXECUTION STEPS: 
         1.
-
     POSTCONDITIONS:  
-
 ---
-    IDENTIFIER:  FUN-WALK-ENABLES-STOP-BUTTON
-
+    IDENTIFIER:  TEST-STOP-MOSEY-ENABLED
     DESCRIPTION:  
-
     PRECONDITIONS:  
-
     EXECUTION STEPS: 
         1.
 
     POSTCONDITIONS:  
-
 ---
-    IDENTIFIER:  FUN-MOSEY-ENABLES-STOP-BUTTON
-
+    IDENTIFIER:  TEST-STOP-RUN-ENABLED
     DESCRIPTION:  
-
     PRECONDITIONS:  
-
     EXECUTION STEPS: 
         1.
-
     POSTCONDITIONS:  
-
 ---
-    IDENTIFIER:  FUN-RUN-ENABLES-STOP-BUTTON
-
+    IDENTIFIER:  TEST-TRACE-STEP
     DESCRIPTION:  
-
-    PRECONDITIONS:  
-
+        Verifies that Step updates the cursor indicating the current program location moves once each Step.
+    PRECONDITIONS:
+        JBefunge is running without a file opened.
     EXECUTION STEPS: 
-        1.
-
+        1. Enter "1." into the Program Area.
+        2. Click Step.
     POSTCONDITIONS:  
-
+        The yellow cursor should appear, highlighting "1" in the Program Area.
 ---
 [PAGEBREAK]
 
@@ -343,3 +305,15 @@
     OBSERVED BEHAVIOR: Program still displays 'hello world'.
     SEVERITY: Critical
     IMPACT:Blocking
+
+    SUMMARY: FUN-TRACE-NO-CURSOR-ON-FIRST-STEP
+    DESCRIPTION: 
+        Step does not make the yellow cursor appear if it is the first opcode in the program.
+    REPRODUCTION STEPS:
+        1. Run JBefunge, an "UNTITLED" new file is open 
+        2. Enter "1." into the Program Area.
+        3. Click Step.
+    EXPECTED BEHAVIOR: Cursor should appear on "1"
+    OBSERVED BEHAVIOR: No cursor appears.
+    SEVERITY: Minor ??
+    IMPACT:??  
