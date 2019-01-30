@@ -236,7 +236,19 @@
     POSTCONDITIONS:  
         The Output area displays "1".
 ---
-    IDENTIFIER:  TEST-STOP-DISABLES-STOP
+    IDENTIFIER:  TEST-STOP-PROGRAM-END-DISABLED
+    DESCRIPTION:  
+        Verifies that the Stop button is disabled upon the termination of a program.
+    PRECONDITIONS:  
+        JBefunge is running and the HelloWorld.bf program exists in the JBefunge directory.
+    EXECUTION STEPS: 
+        1. Open "HelloWorld.bf".
+        2. Press Run.
+        3. Allow the program to finish executing
+    POSTCONDITIONS:  
+        After executing the end-of-program symbol (@), the Stop button is disabled.
+---
+    IDENTIFIER:  TEST-STOP-STOP-DISABLED
     DESCRIPTION:  
         Verifies that pressing Stop while executing a program disables the Stop button.
     PRECONDITIONS:  
@@ -248,34 +260,49 @@
     POSTCONDITIONS:  
         The Stop button returns to its original disabled state, indicated by its grayed-out appearance.
 ---
-    IDENTIFIER:  TEST-STOP-STEP-ENABLED
+    IDENTIFIER:  TEST-STOP-ENABLED-STEP
     DESCRIPTION:  
+        Verifies that executing a program by pressing Step enables the Stop button.
     PRECONDITIONS:  
+        JBefunge is running and the FizzBuzz.bf program exists in the JBefunge directory.
     EXECUTION STEPS: 
-        1.
+        1. Open "FizzBuzz.bf".
+        2. Press the Step button.
     POSTCONDITIONS:  
+        The Stop button is enabled, indicated by the button becoming blue.
 ---
-    IDENTIFIER:  TEST-STOP-WALK-ENABLED
+    IDENTIFIER:  TEST-STOP-ENABLED-MOSEY
     DESCRIPTION:  
+        Verifies that executing a program by pressing Mosey enables the Stop button.
     PRECONDITIONS:  
+        JBefunge is running and the FizzBuzz.bf program exists in the JBefunge directory.
     EXECUTION STEPS: 
-        1.
+        1. Open "FizzBuzz.bf".
+        2. Press the Mosey button.
     POSTCONDITIONS:  
+        The Stop button is enabled while FizzBuzz is running, indicated by the button becoming blue.
 ---
-    IDENTIFIER:  TEST-STOP-MOSEY-ENABLED
+    IDENTIFIER:  TEST-STOP-ENABLED-WALK
     DESCRIPTION:  
+        Verifies that executing a program by pressing Walk enables the Stop button.
     PRECONDITIONS:  
+        JBefunge is running and the FizzBuzz.bf program exists in the JBefunge directory.
     EXECUTION STEPS: 
-        1.
-
+        1. Open "FizzBuzz.bf".
+        2. Press the Walk button.
     POSTCONDITIONS:  
+        The Stop button is enabled while FizzBuzz is running, indicated by the button becoming blue.
 ---
-    IDENTIFIER:  TEST-STOP-RUN-ENABLED
+    IDENTIFIER:  TEST-STOP-ENABLED-RUN
     DESCRIPTION:  
+        Verifies that executing a program by pressing Run enables the Stop button.
     PRECONDITIONS:  
+        JBefunge is running and the FizzBuzz.bf program exists in the JBefunge directory.
     EXECUTION STEPS: 
-        1.
+        1. Open "FizzBuzz.bf".
+        2. Press the Run button.
     POSTCONDITIONS:  
+        The Stop button is enabled while FizzBuzz is running, indicated by the button becoming blue.
 ---
     IDENTIFIER:  TEST-TRACE-STEP
     DESCRIPTION:  
@@ -288,32 +315,36 @@
     POSTCONDITIONS:  
         The yellow cursor should appear, highlighting "1" in the Program Area.
 ---
-[PAGEBREAK]
-
-    SUMMARY: FUN-OPEN-FILE-DOES-NOT-UPDATE-PROGRAM-AREA
-    DESCRIPTION: 
-        Running command 'Open File' does not update the text inside of the program-area text box.
-    REPRODUCTION STEPS:
-        1. Run JBefunge.
-        2. Type text 'hello world' into the program area.
-        3. Save the file as 'test-1'.
-        4. Clear the program area and use save as 'test-2-no-text'.
-        5. Close and re-launch JBefunge.
-        6. Open 'test-1', which should display 'hello world' in the program area.
-        7. Open 'test-2-no-text'.
-    EXPECTED BEHAVIOR: Program area should be empty.
-    OBSERVED BEHAVIOR: Program still displays 'hello world'.
-    SEVERITY: Critical
-    IMPACT:Blocking
-
-    SUMMARY: FUN-TRACE-NO-CURSOR-ON-FIRST-STEP
-    DESCRIPTION: 
-        Step does not make the yellow cursor appear if it is the first opcode in the program.
-    REPRODUCTION STEPS:
-        1. Run JBefunge, an "UNTITLED" new file is open 
-        2. Enter "1." into the Program Area.
-        3. Click Step.
-    EXPECTED BEHAVIOR: Cursor should appear on "1"
-    OBSERVED BEHAVIOR: No cursor appears.
-    SEVERITY: Minor ??
-    IMPACT:??  
+    IDENTIFIER:  TEST-TRACE-MOSEY
+    DESCRIPTION:  
+        Verifies that the Cursor appears when the Mosey button is pressed.
+    PRECONDITIONS:  
+        JBefunge is running and the FizzBuzz.bf program exists in the JBefunge directory.
+    EXECUTION STEPS: 
+        1. Open "FizzBuzz.bf".
+        2. Press the Mosey button.
+    POSTCONDITIONS:  
+        The yellow cursor appears, and moves as the program executes.
+---
+    IDENTIFIER:  TEST-TRACE-WALK
+    DESCRIPTION:  
+        Verifies that the Cursor appears when the Walk button is pressed.
+    PRECONDITIONS:  
+        JBefunge is running and the FizzBuzz.bf program exists in the JBefunge directory.
+    EXECUTION STEPS: 
+        1. Open "FizzBuzz.bf".
+        2. Press the Walk button.
+    POSTCONDITIONS:  
+        The yellow cursor appears, and moves as the program executes.
+---
+    IDENTIFIER:  TEST-TRACE-RUN
+    DESCRIPTION:  
+        Verifies that the Cursor appears when the Run button is pressed.
+    PRECONDITIONS:  
+        JBefunge is running and the FizzBuzz.bf program exists in the JBefunge directory.
+    EXECUTION STEPS: 
+        1. Open "FizzBuzz.bf".
+        2. Press the Run button.
+    POSTCONDITIONS:  
+        The yellow cursor appears, and moves as the program executes.
+---
