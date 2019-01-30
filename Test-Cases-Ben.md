@@ -146,20 +146,82 @@ window reads 'UNTITLED' and the program area is empty.
     name in the title of the window.
 
 ---
-**IDENTIFIER:** FUN-OPEN-FILE
+**IDENTIFIER:** FUN-OPEN-FILE-TEXT-LOADS-INTO-PROGRAM-AREA
 
-**DESCRIPTION:** 
+**DESCRIPTION:** This test verifies that the open file function properly displays the
+text 
 
-**PRECONDITIONS:** 
+**PRECONDITIONS:** JBefunge is running with no program selected, the title reads
+"UNTITLED", and a JBEFUNGE file named "open-test" with a
+body of "test" already exists.
 
 **EXECUTION STEPS:**
-    1.
+    1. Click on the program area text box, and type "removed-text".
+    2. Click on "open file" under the file menu.
+    3. Navigate to directory where "open-test" exists, and locate "open-test".
+    4. Double-click on the file, opening it.
 
 **POSTCONDITIONS:** 
+    "removed-text" is replaced in the program area
 
 ---
 **IDENTIFIER:** FUN-OPEN-FILE-CHANGES-GUI-TITLE
 
+**DESCRIPTION:** JBefunge is running with no program selected, the title reads
+"UNTITLED", and a JBEFUNGE file named "open-test" with a
+body of "test" already exists.
+
+**PRECONDITIONS:** JBefunge is running with no program selected, the title reads
+"UNTITLED", and a JBEFUNGE file named "open-test" with a
+body of "test" already exists.
+
+**EXECUTION STEPS:**
+    1. Click on "open file" under the file menu.
+    2. Navigate to directory where "open-test" exists, and locate "open-test".
+    3. Double-click on the file, opening it.
+
+**POSTCONDITIONS:** 
+   The title of the window is changed from "UNTITLED" to "open-test".
+
+---
+
+**IDENTIFIER:** FUN-OPEN-FILE-LOADS-INTO-PROGRAM-AREA-FROM-OPENED-FILE
+
+**DESCRIPTION:** This test verifies that opening a file while a file already is
+opened updates the program area properly.
+
+**PRECONDITIONS:** JBefunge is running with some file "open-test-1" opened. The title reads
+"open-test-1", and the program area reads "failure". A JBefunge file named "open-test-2" with a
+body of "success" already exists.
+
+**EXECUTION STEPS:**
+    1. Click on "open file" under the file menu.
+    2. Navigate to directory where "open-test-2" exists, and open "open-test-2".
+
+**POSTCONDITIONS:** 
+   The program area reads "success".
+
+---
+
+**IDENTIFIER:** FUN-OPEN-FILE-UPDATES-WINDOW-TITLE-FROM-OPENED-FILE
+
+**DESCRIPTION:** This test verifies that opening a file while a file already is
+opened updates the JBefunge window properly.
+
+**PRECONDITIONS:** JBefunge is running with some file "open-test-fail" opened. The title reads
+"open-test-fail", and a JBefunge file named "open-test-success" already exists.
+
+**EXECUTION STEPS:**
+    1. Click on "open file" under the file menu.
+    2. Navigate to directory where "open-test-success" exists, and open "open-test-success".
+
+**POSTCONDITIONS:** 
+   The title of the JBefunge window reads "open-test-success".
+
+---
+
+**IDENTIFIER:** FUN-STEP-MOVES-ONE-OPERATION-EACH-STEP
+
 **DESCRIPTION:** 
 
 **PRECONDITIONS:** 
@@ -170,7 +232,8 @@ window reads 'UNTITLED' and the program area is empty.
 **POSTCONDITIONS:** 
 
 ---
-**IDENTIFIER:** FUN-OPEN-FILE-LOADS-INTO-PROGRAM-AREAD
+
+**IDENTIFIER:** FUN-STEP-UPDATES-THE-STACK-ONCE-EACH-STEP
 
 **DESCRIPTION:** 
 
@@ -182,7 +245,99 @@ window reads 'UNTITLED' and the program area is empty.
 **POSTCONDITIONS:** 
 
 ---
-**IDENTIFIER:** FUN-SAVE-FILE 
+
+**IDENTIFIER:** FUN-STEP-UPDATES-THE-OUTPUT-ONCE-EACH-STEP
+
+**DESCRIPTION:** 
+
+**PRECONDITIONS:** 
+
+**EXECUTION STEPS:**
+    1.
+
+**POSTCONDITIONS:** 
+
+---
+
+**IDENTIFIER:** FUN-STEP-DISLAYS-CURSOR-EACH-STEP
+
+**DESCRIPTION:** 
+
+**PRECONDITIONS:** 
+
+**EXECUTION STEPS:**
+    1.
+
+**POSTCONDITIONS:** 
+
+---
+
+**IDENTIFIER:** FUN-STEP-UPDATES-THE-OUTPUT-ONCE-EACH-STEP
+
+**DESCRIPTION:** 
+
+**PRECONDITIONS:** 
+
+**EXECUTION STEPS:**
+    1.
+
+**POSTCONDITIONS:** 
+
+---
+
+**IDENTIFIER:** FUN-STOP-DISABLES-STOP
+
+**DESCRIPTION:** 
+
+**PRECONDITIONS:** 
+
+**EXECUTION STEPS:**
+    1.
+
+**POSTCONDITIONS:** 
+
+---
+
+**IDENTIFIER:** FUN-STEP-ENABLES-STOP-BUTTON
+
+**DESCRIPTION:** 
+
+**PRECONDITIONS:** 
+
+**EXECUTION STEPS:**
+    1.
+
+**POSTCONDITIONS:** 
+
+---
+
+**IDENTIFIER:** FUN-WALK-ENABLES-STOP-BUTTON
+
+**DESCRIPTION:** 
+
+**PRECONDITIONS:** 
+
+**EXECUTION STEPS:**
+    1.
+
+**POSTCONDITIONS:** 
+
+---
+
+**IDENTIFIER:** FUN-MOSEY-ENABLES-STOP-BUTTON
+
+**DESCRIPTION:** 
+
+**PRECONDITIONS:** 
+
+**EXECUTION STEPS:**
+    1.
+
+**POSTCONDITIONS:** 
+
+---
+
+**IDENTIFIER:** FUN-RUN-ENABLES-STOP-BUTTON
 
 **DESCRIPTION:** 
 
