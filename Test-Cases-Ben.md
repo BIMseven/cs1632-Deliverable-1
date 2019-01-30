@@ -69,7 +69,7 @@ window reads 'UNTITLED' and the program area is empty.
 ---
 **IDENTIFIER:** FUN-SAVE-FILE-UPDATE
 
-**DESCRIPTION:** This test verifies that saving an updated applies any changes to an
+**DESCRIPTION:** This test verifies that saving an updated file applies any changes to an
 existing file.
 
 **PRECONDITIONS:** JBefunge is running with a new, untitled program. The title of the
@@ -122,14 +122,28 @@ window reads 'UNTITLED' and the program area is empty.
 ---
 **IDENTIFIER:** FUN-SAVE-AS-FILE-UPDATE
 
-**DESCRIPTION:** This test case verifies that 
+**DESCRIPTION:** This test case verifies that the save as function updates or
+overwrites a specified.  
 
-**PRECONDITIONS:** 
+**PRECONDITIONS:** JBefunge is running with a new, untitled program. The title of the
+window reads 'UNTITLED' and the program area is empty.
 
 **EXECUTION STEPS:**
-    1.
+    1. Click on the program area text box, and type "test-text".
+    2. Click the file menu and click on "save file". 
+    3. Choose a directory (Desktop for example), type a unique file name in the 'File
+    Name:' field (save-as-test for example), and press the "save" button.
+    4. Clear the "Program Area" text box, and type "new-stuff".
+    5. Click on "Save as" under the file menu.
+    6. Repeat step 3.
+    7. Close and reopen JBefunge, the title should read "UNTITLED".
+    8. Click on "open file" under the file menu.
+    9. Navigate to directory where the file was saved, and locate the saved file.
+    10. Double-click on the file, opening it.
 
 **POSTCONDITIONS:** 
+    Opening this file displays "new-stuff" in the program area, and the file
+    name in the title of the window.
 
 ---
 **IDENTIFIER:** FUN-OPEN-FILE
