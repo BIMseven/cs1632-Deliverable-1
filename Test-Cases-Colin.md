@@ -45,40 +45,46 @@
 ---
 **IDENTIFIER:** FUN-RUN-SPEED
 
-**DESCRIPTION:** 
+**DESCRIPTION:** This test determines if the Run button executes with no pauses in exectution.
 
-**PRECONDITIONS:** 
+**PRECONDITIONS:** JBefunge is running, Time Program has been checked, and "HelloWorld.bf" has been opened.
 
 **EXECUTION STEPS:**
-    1.
 
-**POSTCONDITIONS:** 
+    1. Press the Run button.
+    2. Record its Time to execute.
+
+**POSTCONDITIONS:** The HelloWorld.bf program should run in under 100,000 microseconds with no pauses in execution.
 
 ---
   
 **IDENTIFIER:** FUN-WALK-SPEED
 
-**DESCRIPTION:** 
+**DESCRIPTION:** This test determines if the Walk button executes with a 50 ms pause after each opcode.
 
-**PRECONDITIONS:** 
+**PRECONDITIONS:** JBefunge is running, Time Program has been checked, and HelloWorld.bf has been opened. 
 
 **EXECUTION STEPS:**
-    1.
 
-**POSTCONDITIONS:** 
+    1. Press the Walk button.
+    2. Record its Time to execute.
+
+**POSTCONDITIONS:** The HelloWorld.bf program should Walk around 50x longer than its run speed.
 
 ---
  
  **IDENTIFIER:** FUN-MOSEY-SPEED
 
-**DESCRIPTION:** 
+**DESCRIPTION:** This test determines if the Mosey button executes with a 500 ms pause after each opcode.
 
-**PRECONDITIONS:** 
+**PRECONDITIONS:** JBefunge is running, Time Program has been checked, and HelloWorld.bf has been opened. 
 
 **EXECUTION STEPS:**
-    1.
 
-**POSTCONDITIONS:** 
+    1. Press the Mosey button.
+    2. Record its Time to execute.
+
+**POSTCONDITIONS:** The HelloWorld.bf program should Mosey around 10x longer than its walk speed.
 
 ---
  
@@ -149,14 +155,16 @@ displayed after running a program.
  
  **IDENTIFIER:** PERF-EXECUTION-TIME
 
-**DESCRIPTION:** 
+**DESCRIPTION:** This test determines if a given computer can run FizzBuzz.bf in under 30 seconds on Run.
 
-**PRECONDITIONS:** 
+**PRECONDITIONS:** JBefunge is running. FizzBuzz.bf has been opened and Time Program has been checked.
 
 **EXECUTION STEPS:**
-    1.
 
-**POSTCONDITIONS:** 
+    1. Press the Run button.
+    2. Wait for execution to finish.
+
+**POSTCONDITIONS:** Time to execute is under 30 seconds (or 30,000,000 microseconds)
 
 ---
  
