@@ -1,6 +1,6 @@
 # Test Cases -Colin
   
-**IDENTIFIER:** FUN-MENU-FILE
+**IDENTIFIER:** TEST-MENU-FILE
 
 **DESCRIPTION:** This test determines if the File menu populates Open File, Save File, Save As, and Quit.
 
@@ -15,7 +15,7 @@
 **POSTCONDITIONS:** Open File, Save File, Save As, and Quit are options listed under the File menu. 
 
 ---
-**IDENTIFIER:** FUN-MENU-COLOR
+**IDENTIFIER:** TEST-MENU-COLOR
 
 **DESCRIPTION:** This test determines if the Color menu populates Red, Yellow, Blue, Pink, Green, and Orange.
 
@@ -29,7 +29,7 @@
 **POSTCONDITIONS:** Red, Yellow, Blue, Pink, Green, and Orange are listed under the Color menu. 
 
 ---
-**IDENTIFIER:** FUN-MENU-OPTIONS
+**IDENTIFIER:** TEST-MENU-OPTIONS
 
 **DESCRIPTION:** This test determines if the Options menu populates Time Program and Check for End Opcode.
 
@@ -43,7 +43,7 @@
 **POSTCONDITIONS:** Checkable items Time Program and Check for End Opcode are listed under Options. 
 
 ---
-**IDENTIFIER:** FUN-RUN-SPEED
+**IDENTIFIER:** TEST-RUN-SPEED
 
 **DESCRIPTION:** This test determines if the Run button executes with no pauses in exectution.
 
@@ -58,7 +58,7 @@
 
 ---
   
-**IDENTIFIER:** FUN-WALK-SPEED
+**IDENTIFIER:** TEST-WALK-SPEED
 
 **DESCRIPTION:** This test determines if the Walk button executes with a 50 ms pause after each opcode.
 
@@ -73,7 +73,7 @@
 
 ---
  
- **IDENTIFIER:** FUN-MOSEY-SPEED
+ **IDENTIFIER:** TEST-MOSEY-SPEED
 
 **DESCRIPTION:** This test determines if the Mosey button executes with a 500 ms pause after each opcode.
 
@@ -88,7 +88,7 @@
 
 ---
  
-**IDENTIFIER:** FUN-TIME-ON
+**IDENTIFIER:** TEST-TIME-ON
 
 **DESCRIPTION:** This test determines if, when Time program is checked, the total time to execute is 
 displayed after running a program.
@@ -105,7 +105,7 @@ displayed after running a program.
 
 ---
  
- **IDENTIFIER:** FUN-TIME-OFF
+ **IDENTIFIER:** TEST-TIME-OFF
 
 **DESCRIPTION:** This test determines if, when Time program is not checked, the total time to execute is not
 displayed after running a program.
@@ -122,7 +122,7 @@ displayed after running a program.
 
 ---
 
-**IDENTIFIER:** FUN-BEFUNGE-VALID
+**IDENTIFIER:** TEST-BEFUNGE-VALID
 
 **DESCRIPTION:** This test determines if JBefunge can successfully execute a JBefunge-93 program.
 
@@ -137,7 +137,7 @@ displayed after running a program.
 
 ---
  
- **IDENTIFIER:** FUN-BEFUNGE-INVALID
+ **IDENTIFIER:** TEST-BEFUNGE-INVALID
 
 **DESCRIPTION:** This test is an Edge Case to determine if JBefunge will run an invalid Java program.
 
@@ -153,7 +153,7 @@ displayed after running a program.
 
 ---
  
- **IDENTIFIER:** OVER-1.3GHz-PERF-EXECUTION-TIME
+ **IDENTIFIER:** TEST-OVER-1.3GHz-PERF-EXECUTION-TIME
 
 **DESCRIPTION:** This test determines if a computer with a clock speed over 1.3 GHz can run FizzBuzz.bf in under 30 seconds on Run.
 
@@ -168,7 +168,7 @@ displayed after running a program.
 
 ---
  
-**IDENTIFIER:** UNDER-1.3GHz-PERF-EXECUTION-TIME
+**IDENTIFIER:** TEST-UNDER-1.3GHz-PERF-EXECUTION-TIME
 
 **DESCRIPTION:** This test determines if a computer with a clock speed under 1.3 GHz can run FizzBuzz.bf in under 30 seconds on Run.
 
