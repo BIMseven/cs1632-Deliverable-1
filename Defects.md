@@ -26,4 +26,17 @@
     EXPECTED BEHAVIOR: Cursor should appear on "1"
     OBSERVED BEHAVIOR: No cursor appears.
     SEVERITY: Minor ??
-    IMPACT:??  
+    IMPACT:??
+---
+    SUMMARY: PERF-EXECUTUTION-TIME-OVER-30-SECONDS
+    DESCRIPTION: 
+        UNDER-1.3-PERF-EXECUTION-TIME fails to run FizzBuzz.bf in under 30 seconds
+    REPRODUCTION STEPS:
+        1. Run JBefunge on a sub-1.3GHz machine.
+        2. Open File, select FizzBuzz.bf.
+        3. Check the Time Program checkbox.
+        3. Press Run, wait for execution time pop-up.
+    EXPECTED BEHAVIOR: Program finishes execution in under 30,000,000 microseconds.
+    OBSERVED BEHAVIOR: Program finished execution in 31,255,652 microseconds on a 1.2 GHz computer.
+    SEVERITY: Trivial
+    IMPACT: Users with under-powered machines will experience longer wait times for executions of programs.
