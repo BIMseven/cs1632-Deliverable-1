@@ -157,7 +157,7 @@ displayed after running a program.
 
 **DESCRIPTION:** This test determines if a computer with a clock speed over 1.3 GHz can run FizzBuzz.bf in under 30 seconds on Run.
 
-**PRECONDITIONS:** JBefunge is running. FizzBuzz.bf has been opened and Time Program has been checked.
+**PRECONDITIONS:** JBefunge is running. FizzBuzz.bf has been opened and Time Program has been checked. Computer's clock speed is over 1.3 GHz.
 
 **EXECUTION STEPS:**
 
@@ -172,7 +172,7 @@ displayed after running a program.
 
 **DESCRIPTION:** This test determines if a computer with a clock speed under 1.3 GHz can run FizzBuzz.bf in under 30 seconds on Run.
 
-**PRECONDITIONS:** JBefunge is running. FizzBuzz.bf has been opened and Time Program has been checked.
+**PRECONDITIONS:** JBefunge is running. FizzBuzz.bf has been opened and Time Program has been checked. Computer's clock speed is under 1.3 GHz.
 
 **EXECUTION STEPS:**
 
