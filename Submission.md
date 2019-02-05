@@ -5,12 +5,11 @@
 ### CS 1632 - DELIVERABLE 1: Test Plan and Traceability Matrix
 
 
-[PAGEBREAK]
 
 #Introduction
 
 
-[PAGEBREAK]
+
 # Test Cases -Ben
     IDENTIFIER: TEST-TEXT-DISPLAY
     DESCRIPTION:
@@ -313,7 +312,6 @@
     POSTCONDITIONS:  
         The yellow cursor appears, and moves as the program executes.
 ---
-[PAGEBREAK]
 # Test Cases -Colin
   
 **IDENTIFIER:** TEST-MENU-FILE
@@ -518,8 +516,7 @@ displayed after running a program.
 
 **POSTCONDITIONS:** Time to execute is under 30 seconds (or 30,000,000 microseconds)
 
----
-[PAGEBREAK]
+
 # Traceability Matrix
   * __FUN-TEXT-DISPLAY__: 
     * TEST-TEXT-DISPLAY
@@ -568,7 +565,7 @@ displayed after running a program.
   * __PERF-EXECUTION-TIME__:
     * TEST-100%-CPU-PERF-EXECUTION-TIME
     * TEST-50%-CPU-PERF-EXECUTION-TIME
-[PAGEBREAK]
+
 # Defects
 
     SUMMARY: FUN-OPEN-FILE-DOES-NOT-UPDATE-PROGRAM-AREA

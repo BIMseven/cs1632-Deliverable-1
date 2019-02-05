@@ -25,7 +25,7 @@
         3. Click Step.
     EXPECTED BEHAVIOR: Cursor should appear on "1"
     OBSERVED BEHAVIOR: No cursor appears.
-    SEVERITY: Minor ??
+    SEVERITY: Minor 
     IMPACT:??
 ---
     SUMMARY: PERF-EXECUTUTION-TIME-OVER-30-SECONDS
