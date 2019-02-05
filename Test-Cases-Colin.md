@@ -121,6 +121,23 @@ displayed after running a program.
 **POSTCONDITIONS:** No time to execute in microseconds is displayed.
 
 ---
+ 
+ **IDENTIFIER:** TEST-TIME-SWITCH
+
+**DESCRIPTION:** This test is a **Edge Case** that checks for correct execution time if Time Program is selected mid-execution.
+
+**PRECONDITIONS:** JBefunge is running.
+
+**EXECUTION STEPS:**
+
+    1. Open the Options menu, ensure the "Time program" checkbox is empty.
+    2. Run the included FizzBuzz program.
+    3. Before FizzBuzz finishes execution, open the Options menu and press "Time program"
+    3. Observe the time to execute.
+
+**POSTCONDITIONS:** Correct execution time is displayed.
+
+---
 
 **IDENTIFIER:** TEST-BEFUNGE-VALID
 
@@ -139,7 +156,7 @@ displayed after running a program.
  
  **IDENTIFIER:** TEST-BEFUNGE-INVALID
 
-**DESCRIPTION:** This test is an Edge Case to determine if JBefunge will run an invalid Java program.
+**DESCRIPTION:** This test is an **Edge Case** to determine if JBefunge will run an invalid Java program.
 
 **PRECONDITIONS:** JBefunge is running and a basic Java "Hello, World!" program is entered in the Program Area.
 (WARNING: Test will continue to execute indefinitely, will need to be interrupted.)
