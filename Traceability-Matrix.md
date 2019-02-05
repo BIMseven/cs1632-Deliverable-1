@@ -37,6 +37,7 @@
   * __FUN-TIME__: 
     * TEST-TIME-ON
     * TEST-TIME-OFF
+    * TEST-TIME-SWITCH
   * __FUN-TRACE__: 
     * TEST-TRACE-STEP
     * TEST-TRACE-MOSEY
