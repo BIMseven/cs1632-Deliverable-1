@@ -7,6 +7,13 @@
 
 
 #Introduction
+This test plan tests the JBefunge IDE for file I/O functionality, program execution time, variable run speed functionality, editor functionality and UI cleanliness by means of black-box testing. Without examining any program code or writing any test programs, we were able to write a test plan that offers fairly complete coverage of the given requirements and expected behavior. 
+
+While writing and testing the JBefunge requirements, our group found it difficult to test correct run-speeds. This is due to the nature of black box testing, leading us to rely solely on averaging displayed runtimes. Gathering enough data points to determine proper behavior proved time-consuming. Enough to prohibit gathering a sufficient sample size to determine accurate averages. 
+
+Our concerns with this test plan lie in the execution of our run-speed tests, specifically the tests associated with the execution speed and minimum run speed requirements. Executing such tests yields inconsistent results based on variables like machine performance and runtime environment. This test plan uses a virtual machine to provide a more reproducible environment, however this solution is time consuming in setup for its minimal amelioration of the problem.
+
+Despite our test plan's shortcomings, it still provides sufficient coverage of the requirements.
 
 
 

@@ -12,5 +12,5 @@
     * Testing run-speed of run/walk/mosey was difficult
       * Simply took a long time
   * Concerns:
-    * Tests mentioned above vary based on computer preformance and run in a variable amount of time, causing overall execution time to be inconsistent. In a best-case-scenario, we would be able to run this and average a large sample of run-times. This would take up a large amount of time for testing one requirement, essentially making it infeasible to test. 
+    * Tests mentioned above vary based on computer preformance and run in a variable amount of time, causing overall execution time to be inconsistent. In a best-case-scenario, we would be able to run this and average a large sample of run-times. However doing so would take up a large amount of time for testing one requirement, essentially making it infeasible to test. 
     * File I/O produces bugs inconsistently. 
