@@ -32,11 +32,12 @@
     DESCRIPTION: 
         UNDER-1.3-PERF-EXECUTION-TIME fails to run FizzBuzz.bf in under 30 seconds
     REPRODUCTION STEPS:
-        1. Run JBefunge on a sub-1.3GHz machine.
+        1. Initialize a Windows 10 Virtual Machine with a 50% Execution Cap.
+        2. Install JDK and compile JBefunge, then run JBefunge.
         2. Open File, select FizzBuzz.bf.
         3. Check the Time Program checkbox.
         3. Press Run, wait for execution time pop-up.
     EXPECTED BEHAVIOR: Program finishes execution in under 30,000,000 microseconds.
-    OBSERVED BEHAVIOR: Program finished execution in 31,255,652 microseconds on a 1.2 GHz computer.
+    OBSERVED BEHAVIOR: Program finished execution in 78,968,914 microseconds on the Virtual Machine.
     SEVERITY: Trivial
     IMPACT: Users with under-powered machines will experience longer wait times for executions of programs.
